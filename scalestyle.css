@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+}
+canvas {
+    width: 90vw;
+    max-height: 90vh;
+}
+#topbuttons {
+    position: fixed;
+    top: 2vh;
+    left: 5vw;
+    text-align: center;
+}
+button {
+    position: relative;
+    width: 5vw;
+    height: 6vh;
+    min-width: 30px;
+    min-height: 25px;
+    max-height: 50px;
+    max-width: 60px;
+    margin: 5px;
+}
+#divide {
+    min-width: 60px;
+}
+#nodivide {
+    min-width: 60px;
+    max-width: 90px;
+    height: 60px;
+}
+.division {
+    position: fixed;
+    left: 20vw;
+    top: 20vh;
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    border: solid 1px;
+}
+#inputamount {
+    display: none;   
+}
+#badinput {
+    display: none;   
+}
