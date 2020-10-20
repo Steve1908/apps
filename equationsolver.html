@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Balancing Equations</title>
+        <link rel="stylesheet" href="scalestyle.css">
+    </head>
+    <body onload="runscale()">
+        <canvas id="canvas1" width=600 height=300 style="border:1px solid #000000;"></canvas>
+        
+        <div id="topbuttons">
+            <button type="button" class="plusminus" onclick="addX()">+X</button>
+            <button type="button" class="plusminus" onclick="subtractX()">-X</button>
+            <button type="button" class="plusminus" onclick="add1()">+1</button>
+            <button type="button" class="plusminus" onclick="subtract1()">-1</button>
+            <button type="button" id="divide" onclick="displayquotients()">Divide</button>
+        </div>
+        
+        <script src="scalescript.js"></script>
+        
+        <div class= "division" id="inputamount">
+            <p>How much do you want to divide by?</p>
+            <button type="button" onclick="divideby2()">2</button>
+            <button type="button" onclick="divideby3()">3</button>
+            <button type="button" onclick="divideby5()">5</button>
+            <button type="button" onclick="divideby7()">7</button>
+            <br><br>
+            <button type="button" id="nodivide" onclick="canceldivision()">I don't want to divide</button>
+        </div>
+        
+        <div class="division" id="badinput">
+            <p>That doesn't divide evenly...<br><br>
+                Let's try picking a different number.
+            </p>
+            <button type="button" onclick="tryagain()">Try again</button>
+        </div> 
+        
+    </body>
+</html>
